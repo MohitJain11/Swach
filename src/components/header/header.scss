@@ -1,0 +1,25 @@
+header {
+  .header_grid_header {
+    background: linear-gradient(to left,#2EA4F7, #2ec8f4);
+    height: 100%;
+  }
+
+  .header_image_logo {
+    height: 80px;
+    width: 80px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
+
+  .header_col_image {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .header_col_heading {
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,47 @@
+<!--
+  Generated template for the FormSubmitPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding>
+
+  <ion-grid class="header_grid_header">
+    <ion-row>
+      <ion-col class="header_col_title">
+        Edit Profile
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="card_login">
+    <ion-row class="row_input">
+      <ion-col>
+        <ion-item>
+          <ion-input type="password" placeholder="Select School" class="ion_input"></ion-input>
+          <ion-label>
+            <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" class="icon_user"></ion-icon>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row_input">
+      <ion-col>
+        <ion-item>
+          <ion-label>
+            <ion-icon ios="ios-arrow-dropright" md="md-arrow-dropright" class="icon_user"></ion-icon>
+          </ion-label>
+          <ion-input type="password" placeholder="Student Present" class="ion_input"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <div class="div_button_login">
+    <button ion-button color="app_color" round class="button_login" (click)="login()">Login</button>
+  </div>
+</ion-content>

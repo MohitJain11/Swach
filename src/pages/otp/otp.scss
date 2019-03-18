@@ -1,0 +1,41 @@
+page-otp {
+  .header_class {
+    height: calc(100% - 65%);
+    // width: calc(100% - 20px);
+  }
+
+  .card_login {
+    margin-top: -8%;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px darkgrey;
+  }
+
+  .item-inner {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  .ion_input {
+    margin-right: 5px;
+    border-bottom: 1px solid darkgray;
+  }
+
+  .div_button_login {
+    text-align: center;
+    // margin-top: -10%;
+  }
+
+  .row_input {
+    margin-top: 5px;
+  }
+
+  .button_login {
+    width: 70%;
+    height: 40px;
+    box-shadow: 0px 2px 10px darkgrey;
+  }
+}

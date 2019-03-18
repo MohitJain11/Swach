@@ -1,7 +1,7 @@
 {
-  "name": "swach",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
+    "name": "swach",
+    "integrations": {
+        "cordova": {}
+    },
+    "type": "ionic-angular"
 }
