@@ -42,8 +42,11 @@ export class AdminProvider {
         });
     });
   }
+  
+  // Values/ForTest
+
   UserLogin(data) {
-    return this.execute('UserLogin', data);
+    return this.execute('Values/ForTest', data);
   }
 
   CheckOTP(data) {
@@ -53,5 +56,10 @@ export class AdminProvider {
   OptGeneerate(data) {
     return this.execute('OptGeneerate', data);
   }
+  
+  // GetUserLoginApp(data) {
+  //   return this.execute('GetUserLoginApp', data);
+  // }
+
 
 }

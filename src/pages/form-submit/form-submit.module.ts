@@ -4,7 +4,7 @@ import { FormSubmitPage } from './form-submit';
 
 @NgModule({
   declarations: [
-    FormSubmitPage,
+    // FormSubmitPage,
   ],
   imports: [
     IonicPageModule.forChild(FormSubmitPage),

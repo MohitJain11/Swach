@@ -4,6 +4,8 @@ import { HeaderComponent } from '../../components/header/header';
 import { OtpPage } from '../otp/otp';
 import { AdminProvider } from '../../providers/admin/admin';
 import { ShareService } from '../../app/share.service';
+import { HTTP } from '@ionic-native/http';
+import { RequestOptions } from '@angular/http';
 
 /**
  * Generated class for the LoginPage page.
@@ -30,6 +32,7 @@ export class LoginPage {
     public adminProvider: AdminProvider,
     public toastCtrl: ToastController,
     public loadingControl: LoadingController,
+    public http: HTTP,
     private share: ShareService) {
   }
 
@@ -45,7 +48,7 @@ export class LoginPage {
   UserLogin() {
     this.showLoading();
     let param = {
-      "UserName": "peeyush",
+      "ID": "2",
       "Password": "123456",
     };
     console.log(param);
@@ -67,18 +70,18 @@ export class LoginPage {
   }
 
   loginTest() {
-    let url = 'http://103.74.54.55:7902/api/Admin/UserLogin';
+    let url = 'http://103.74.54.55:7902/api/Login/GetListPS';
     let params = {
-      "UserName": "peeyush",
-      "Password": "123456",
+      "value": "peeyush"
     };
-    let headers = {};
-    cordova.plugin.http.get(url,
-      params, headers, (response) => {
-        console.log(response.status);
-      }, function (response) {
-        console.error(response.error);
-      });
+    let headers = {
+      'Content-Type': 'application/json'
+    };
+    this.http.post(url, JSON.stringify(params), headers).then(data => {
+      console.log("data ", JSON.stringify(data));
+    }).catch(error => {
+      console.log("error ", error);
+    })
   }
 
   showLoading() {

@@ -4,7 +4,7 @@ import { OtpPage } from './otp';
 
 @NgModule({
   declarations: [
-    OtpPage,
+    // OtpPage,
   ],
   imports: [
     IonicPageModule.forChild(OtpPage),

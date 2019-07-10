@@ -4,7 +4,7 @@ import { CapturePage } from './capture';
 
 @NgModule({
   declarations: [
-    CapturePage,
+    // CapturePage,
   ],
   imports: [
     IonicPageModule.forChild(CapturePage),
