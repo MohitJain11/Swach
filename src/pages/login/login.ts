@@ -48,8 +48,8 @@ export class LoginPage {
   UserLogin() {
     this.showLoading();
     let param = {
-      "ID": "2",
-      "Password": "123456",
+      "UserName": "1",
+      "Password": "8888888888",
     };
     console.log(param);
     this.adminProvider.UserLogin(param).then((result) => {

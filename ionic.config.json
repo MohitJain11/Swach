@@ -7,7 +7,7 @@
     "proxies": [
         {
             "path": "/api",
-            "proxyUrl": "http://cors.api.com/api"
+            "proxyUrl": "http://103.74.54.30:7902/api"
         }
     ]
 }
